@@ -11,7 +11,7 @@
 
 .navbar_logo{
     color: #ffffff;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.5rem;
 }
 
@@ -21,7 +21,16 @@
     color: #ffffff;
 }
 
-.nav_icon{
+.nav_button{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    background-color: transparent;
+    border: none;
+    margin: 0.5rem;
+    color: #ffffff;
+}
+.nav_button svg{
     width: 30px;
-    margin: 0.6rem;
 }
