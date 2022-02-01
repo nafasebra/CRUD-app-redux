@@ -1,4 +1,7 @@
 .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #2A2D3E;
     padding: 1rem 1.5rem;
     box-shadow: 0 3px 6px #2a2d3e5d;
@@ -9,5 +12,16 @@
 .navbar_logo{
     color: #ffffff;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+.nav_icons{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.nav_icon{
+    width: 30px;
+    margin: 0.6rem;
 }
