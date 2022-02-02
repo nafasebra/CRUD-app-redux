@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Navbar from './components/Navbar';
-import Card from './components/Card';
+import CardSection from './components/card/CardSection';
 
 import './App.css';
 
@@ -11,7 +11,7 @@ function App() {
 		<div className="App">
 			<Navbar />
 
-			<Card />
+			<CardSection />
 		</div>
 	);
 }
