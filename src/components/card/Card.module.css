@@ -4,7 +4,7 @@
 }
 
 .card{
-    width: 25%;
+    max-width: 25%;
     flex: 0 0 25%;
     background-color: #2A2D3E;
     box-shadow: 0 3px 6px #2a2d3e5d;
@@ -24,4 +24,24 @@
 .card_body{
     padding: 1.5rem 1rem;
     color: #ffffff;
+}
+
+.card_title{
+    margin-top: 0;
+}
+
+.card_topics{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card_topic{
+    display: inline-block;
+    background-color: #35394d;
+    border-radius: 5px;
+    padding: 0.3rem 0.7rem;
+    margin: 0.3rem;
+}
+.card_topic:nth-child(1){
+    margin-left: 0;
 }

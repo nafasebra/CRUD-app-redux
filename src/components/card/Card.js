@@ -3,18 +3,27 @@ import React from 'react';
 import style from './Card.module.css';
 
 
-const Card = () => {
+const Card = (props) => {
+
+    const {
+        title,
+        desc,
+        topics
+    } = props;
+
     return (
         <div className={style.card}>
             <div className={style.card_img}>
                 <img src="https://i.ytimg.com/vi/CTCVaslgLCY/hqdefault.jpg" alt="first-of-post" />
             </div>
             <div className={style.card_body}>
-                <h3 className={style.card_title}>title 1</h3>
-                <p className={style.card_desc}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolor!
-                </p>
-                {/* <div className={style.card_buttons}></div> */}
+                <h3 className={style.card_title}>{title}</h3>
+                <p className={style.card_desc}>{desc}</p>
+                <div className={style.card_topics}>
+                    {
+                        topics.map((item, index) => <div key={index} className={style.card_topic}>{item}</div>)
+                    }
+                </div>
             </div>
         </div>
     );
