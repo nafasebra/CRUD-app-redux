@@ -22,15 +22,35 @@
 }
 
 .nav_button{
+    position: relative;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
     background-color: transparent;
     border: none;
-    margin: 0.5rem;
+    margin: 0.6rem ;
     color: #ffffff;
+    cursor: pointer;
+}
+.nav_button::before{
+    content: ' ';
+    position: absolute;
+    top: -7px;
+    left: -1.75px;
+    width: 45px;
+    height: 45px;
+    background-color: #aaaaaa75;
+    z-index: 2;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+.nav_button:hover::before{
+    transform: scale(1);
 }
 .nav_button svg{
     width: 30px;
+    position: relative;
+    z-index: 100;
 }
