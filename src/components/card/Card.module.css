@@ -33,7 +33,7 @@
 }
 
 .card_body{
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     color: #ffffff;
 }
 
@@ -56,3 +56,4 @@
 .card_topic:nth-child(1){
     margin-left: 0;
 }
+

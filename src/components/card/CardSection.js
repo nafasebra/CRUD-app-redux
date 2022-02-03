@@ -4,6 +4,7 @@ import style from './Card.module.css'
 import layout from './../Layout.module.css'
 
 import Card from './Card';
+
 import posts from '../../data/posts';
 
 
