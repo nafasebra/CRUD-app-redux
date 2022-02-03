@@ -29,6 +29,11 @@ const posts = [
         title: "post 6",
         topics: ["post", "first post"],
         description: "this is a post description"
+    },{
+        id: 6,
+        title: "post 6",
+        topics: ["post", "first post"],
+        description: "this is a post description"
     },
 ]
 
