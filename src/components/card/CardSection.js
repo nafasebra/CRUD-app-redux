@@ -13,7 +13,7 @@ const CardSection = () => {
             <h3 className={style.head_text}>Added Posts...</h3>
             <div className={style.card_section}>
                 {
-                    posts.map((item, index) => <Card key={index} title={item.title} desc={item.description} topics={item.topics}/>)
+                    posts.map((item, index) => <Card key={index} imgSrc={item.imageSrc} title={item.title} desc={item.description} topics={item.topics} />)
                 }
             </div>
         </div>

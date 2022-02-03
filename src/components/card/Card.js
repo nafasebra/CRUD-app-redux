@@ -7,6 +7,7 @@ const Card = (props) => {
 
     const {
         title,
+        imgSrc,
         desc,
         topics
     } = props;
@@ -14,7 +15,7 @@ const Card = (props) => {
     return (
         <div className={style.card}>
             <div className={style.card_img}>
-                <img src="https://i.ytimg.com/vi/CTCVaslgLCY/hqdefault.jpg" alt="first-of-post" />
+                <img src={imgSrc} alt="first-of-post" />
             </div>
             <div className={style.card_body}>
                 <h3 className={style.card_title}>{title}</h3>
