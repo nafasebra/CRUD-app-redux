@@ -15,8 +15,8 @@
     position: absolute;
     top: -7px;
     left: -1.75px;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     background-color: #aaaaaa75;
     z-index: 2;
     border-radius: 50%;
@@ -27,7 +27,7 @@
     transform: scale(1);
 }
 .btn_icon svg{
-    width: 30px;
+    width: 25px;
     position: relative;
     z-index: 100;
 }

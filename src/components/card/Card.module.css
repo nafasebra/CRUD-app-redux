@@ -21,11 +21,31 @@
     overflow: hidden;
 }
 
+.card_header{
+    position: relative;
+}
+.card_icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2121219d;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+.card_icons:hover{
+    opacity: 1;
+}
 .card_img{
     width: 100%;
     height: 200px;
+    position: relative;
 }
-
 .card_img img{
     width: 100%;
     height: 100%;
@@ -56,4 +76,3 @@
 .card_topic:nth-child(1){
     margin-left: 0;
 }
-
