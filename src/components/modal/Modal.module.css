@@ -1,0 +1,21 @@
+.modal_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21212150;
+}
+
+.modal{
+    padding: 1rem;
+    width: 60vw;
+    max-height: calc(70vh - 100px);
+    background-color: #2A2D3E;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px #2a2d3e5d;
+}
