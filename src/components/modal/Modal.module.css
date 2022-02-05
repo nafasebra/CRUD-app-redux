@@ -36,5 +36,13 @@
 .modal_body{
     padding: 1rem 0.75rem;
     height: calc(70vh - 140px);
-    overflow-y: scroll;
+    overflow-y: auto;
+}
+.modal_body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+.modal_body::-webkit-scrollbar-thumb{
+    background-color: #4d5372;
+    box-shadow: 0 3px 6px #4d537277;
+    border-radius: 10px;
 }

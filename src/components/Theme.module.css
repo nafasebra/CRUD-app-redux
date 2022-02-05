@@ -1,3 +1,7 @@
+.text_light{
+    color: #ffffff;
+}
+
 .btn_icon{
     position: relative;
     appearance: none;
@@ -43,6 +47,28 @@
 }
 .form_input::placeholder{
     color: #4d5372;
+}
+
+.imageupload_label input[type="file"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    display: none;
+}
+.imageupload_section{
+    width: 100%;
+    border: 2px dashed #4d5372;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.imageupload_section svg{
+    width: 50px;
+}
+.imageupload_section p{
+    margin-bottom: 0;
 }
 
 .btn_blue{
