@@ -14,7 +14,7 @@
 .modal{
     padding: 1rem;
     width: 45vw;
-    height: calc(70vh - 100px);
+    height: calc(70vh - 50px);
     background-color: #2A2D3E;
     border-radius: 15px;
     box-shadow: 0 3px 6px #2a2d3e5d;
@@ -35,6 +35,6 @@
 
 .modal_body{
     padding: 1rem 0.75rem;
-    height: calc(70vh - 200px);
+    height: calc(70vh - 140px);
     overflow-y: scroll;
 }

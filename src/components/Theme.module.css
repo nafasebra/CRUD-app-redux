@@ -39,8 +39,40 @@
     background-color: transparent;
     color: #ffffff;
     border: 1px solid #4d5372;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 .form_input::placeholder{
     color: #4d5372;
+}
+
+.btn_blue{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    overflow: hidden;
+    position: relative;
+    background-color: #2979FF;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.btn_blue::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50;
+    transition: width 300ms, height 300ms;
+    background-color: #ffffff44;
+}
+.btn_blue:hover::after{
+    width: 700px;
+    height: 700px;
 }
