@@ -7,7 +7,12 @@ const Addpost = () => {
     return (
         <div>
             <form action="">
-                <input type="text" placeholder='' className={theme.form_input} />
+                <input type="text" placeholder='post title' className={theme.form_input} />
+                <input type="text" placeholder='post title' className={theme.form_input} />
+                <input type="text" placeholder='post title' className={theme.form_input} />
+                <input type="text" placeholder='post title' className={theme.form_input} />
+                <input type="text" placeholder='post title' className={theme.form_input} />
+                <input type="text" placeholder='post title' className={theme.form_input} />
             </form>
         </div>
     );

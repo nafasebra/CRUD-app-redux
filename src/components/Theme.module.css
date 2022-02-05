@@ -34,10 +34,13 @@
 
 .form_input{
     margin: 0.5rem 0;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.15rem;
     width: 100%;
     background-color: transparent;
     color: #ffffff;
-    border: 1px solid #383c52;
+    border: 1px solid #4d5372;
     border-radius: 3px;
+}
+.form_input::placeholder{
+    color: #4d5372;
 }

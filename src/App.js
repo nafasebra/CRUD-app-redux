@@ -25,7 +25,6 @@ function App() {
 			</Modal>
 
 			<Navbar />
-
 			<CardSection />
 		</div>
 	);

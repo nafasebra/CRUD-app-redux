@@ -14,11 +14,11 @@
 .modal{
     padding: 1rem;
     width: 45vw;
-    max-height: calc(70vh - 100px);
+    height: calc(70vh - 100px);
     background-color: #2A2D3E;
     border-radius: 15px;
     box-shadow: 0 3px 6px #2a2d3e5d;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .modal_header{
@@ -28,9 +28,13 @@
     color: #ffffff;
     padding: 1rem 0.5rem;
 }
-.modal_header button{
-    margin: 0;
-}
+.modal_header button,
 .modal_title{
     margin: 0;
+}
+
+.modal_body{
+    padding: 1rem 0.75rem;
+    height: calc(70vh - 200px);
+    overflow-y: scroll;
 }
