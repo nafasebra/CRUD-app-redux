@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 
 import Navbar from './components/Navbar';
 import CardSection from './components/card/CardSection';
+import Modal from './components/modal/Modal';
+import Addpost from './components/modal/AddPost';
 
 import './App.css';
-import Modal from './components/modal/Modal';
 
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
 
 	return (
 		<div className="App">
-			<Modal>
-				<p>hello modal</p>	
+			<Modal title={"Add post"}>
+				<Addpost />
 			</Modal>
 
 			<Navbar />

@@ -31,3 +31,13 @@
     position: relative;
     z-index: 100;
 }
+
+.form_input{
+    margin: 0.5rem 0;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #383c52;
+    border-radius: 3px;
+}
