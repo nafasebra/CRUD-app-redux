@@ -9,7 +9,7 @@ import './App.css';
 
 
 function App() {
-    const [openModal, setOpenModal] = useState(false);
+    const [openModal, setOpenModal] = useState(true);
 
 	const closeModalFunc = () => {
 		setOpenModal(false);
@@ -20,7 +20,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<Modal title={"Add post"}>
+			<Modal isOpen={openModal} isHeader={true} title={"Add post"}>
 				<Addpost />
 			</Modal>
 
