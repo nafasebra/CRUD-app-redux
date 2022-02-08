@@ -12,7 +12,7 @@
 }
 
 .modal{
-    padding: 1rem;
+    padding: 0 0.75rem 1rem;
     width: 45vw;
     height: calc(70vh - 50px);
     background-color: #2A2D3E;
@@ -26,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
-    padding: 1rem 0.5rem;
+    padding: 1.5rem 0.5rem;
 }
 .modal_header button,
 .modal_title{
