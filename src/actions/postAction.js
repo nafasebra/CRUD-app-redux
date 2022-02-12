@@ -5,7 +5,7 @@ const DELETE_POST = "DELETE_POST";
 export function CreatePost(infos) {
     return {
         type: CREATE_POST,
-        infos
+        payload: infos
     }
 }
 

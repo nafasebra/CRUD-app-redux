@@ -2,16 +2,15 @@ const SET_OPEN_MODAL = "SET_OPEN_MODAL";
 const SET_CLOSE_MODAL = "SET_CLOSE_MODAL";
 
 
-export function OpenModal(status) {
+export function OpenModal(title) {
     return{
         type: SET_OPEN_MODAL,
-        status
+        title
     }
 }
 
-export function CloseModal(status) {
+export function CloseModal() {
     return{
-        type: SET_CLOSE_MODAL,
-        status
+        type: SET_CLOSE_MODAL
     }
 }
