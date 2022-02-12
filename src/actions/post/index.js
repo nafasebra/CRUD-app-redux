@@ -2,10 +2,10 @@ const CREATE_POST = "CREATE_POST";
 const UPDATE_POST = "UPDATE_POST";
 const DELETE_POST = "DELETE_POST";
 
-export function CreatePost(id) {
+export function CreatePost(infos) {
     return {
         type: CREATE_POST,
-        id
+        infos
     }
 }
 
