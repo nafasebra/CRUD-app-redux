@@ -2,9 +2,7 @@ import React from 'react';
 
 import Navbar from './components/Navbar';
 import CardSection from './components/card/CardSection';
-import Addpost from './components/modal/AddPost';
-
-import modalContainer from './container/modalContainer'
+import ModalContainer from './container/ModalContainer'
 
 import './App.css';
 
@@ -13,7 +11,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<modalContainer />
+			<ModalContainer />
 
 			<Navbar />
 			<CardSection />
