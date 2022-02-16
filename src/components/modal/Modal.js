@@ -4,8 +4,6 @@ import style from './Modal.module.css';
 import theme from './../Theme.module.css'
 
 
-
-
 const Modal = (props) => {
 
     const {

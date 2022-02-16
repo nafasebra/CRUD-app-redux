@@ -2,15 +2,15 @@ import React from 'react'
 import { connect } from 'react-redux';
 
 import Modal from '../components/modal/Modal'
-import Addpost from '../components/modal/AddPost';
+// import Addpost from '../components/modal/AddPost';
 
-import { OpenModal, CloseModal } from '../actions/modalAction';
+import { CloseModal } from '../actions/modalAction';
 
 
 function modalContainer(props) {
 
 	const {
-		isOpen, hasTitle, textOfTitle, closeModal
+		isOpen, hasTitle, textOfTitle, childOfModal, closeModal
 	} = props;
 
 	return (
@@ -20,26 +20,26 @@ function modalContainer(props) {
 			title={textOfTitle}
 			toCloseModal={closeModal}
 		>
-			<Addpost />
+			{childOfModal}
 		</Modal>
 	)
 }
 
 const mapStateToProps = state => {
 	const {
-		isOpen, hasTitle, textOfTitle
+		isOpen, hasTitle, textOfTitle, childOfModal
 	} = state.modalReducer;
 
 	return {
 		isOpen: isOpen,
 		hasTitle: hasTitle,
-		textOfTitle: textOfTitle
+		textOfTitle: textOfTitle,
+		childOfModal: childOfModal
 	}
 }
 
 const mapDispatchToProps = dispatch => {
 	return {
-		openModal: () => dispatch(OpenModal()),
 		closeModal: () => dispatch(CloseModal())
 	}
 }
