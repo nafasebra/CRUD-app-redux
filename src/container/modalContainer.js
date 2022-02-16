@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux';
 
 import Modal from '../components/modal/Modal'
-import Addpost from '../components/modal/AddPost'
+import Addpost from '../components/modal/AddPost';
 
 import { OpenModal, CloseModal } from '../actions/modalAction';
 
@@ -26,10 +26,14 @@ function modalContainer(props) {
 }
 
 const mapStateToProps = state => {
+	const {
+		isOpen, hasTitle, textOfTitle
+	} = state.modalReducer;
+
 	return {
-		isOpen: state.isOpen,
-		hasTitle: state.hasTitle,
-		textOfTitle: state.textOfTitle
+		isOpen: isOpen,
+		hasTitle: hasTitle,
+		textOfTitle: textOfTitle
 	}
 }
 

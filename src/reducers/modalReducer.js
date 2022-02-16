@@ -1,7 +1,7 @@
 const initialState = {
     isOpen: true,
     hasTitle: true,
-    textOfTitle: 'sdfsdf'
+    textOfTitle: 'sdfsdfsdfsdf'
 }
 
 function modalReducer (state = initialState, action) {
