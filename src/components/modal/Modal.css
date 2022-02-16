@@ -10,7 +10,6 @@
     align-items: center;
     background-color: #21212150;
 }
-
 .modal{
     padding: 0 0.75rem 1rem;
     width: 45vw;
@@ -19,6 +18,18 @@
     border-radius: 15px;
     box-shadow: 0 3px 6px #2a2d3e5d;
     overflow-y: hidden;
+    animation: showModal 300ms alternate forwards;
+}
+
+@keyframes showModal {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .modal_header{
