@@ -6,7 +6,7 @@ import theme from './../Theme.module.css'
 const Modal = (props) => {
 
     const {
-        children, isOpen, isTitle, title, toCloseModal
+        children, isOpen, title, toCloseModal
     } = props
 
     return (
@@ -17,7 +17,6 @@ const Modal = (props) => {
                     <div className={style.modal}>
                         <div className={style.modal_header}>
                             {
-                                isTitle &&
                                 <h3 className={style.modal_title}>{title}</h3>
                             }
                             <button 

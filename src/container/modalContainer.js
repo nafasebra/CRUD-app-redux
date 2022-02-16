@@ -10,14 +10,13 @@ import { CloseModal } from '../actions/modalAction';
 function modalContainer(props) {
 
 	const {
-		isOpen, hasTitle, textOfTitle, childOfModal, closeModal
+		isOpen, title, childOfModal, closeModal
 	} = props;
 
 	return (
 		<Modal
 			isOpen={isOpen}
-			isTitle={hasTitle}
-			title={textOfTitle}
+			title={title}
 			toCloseModal={closeModal}
 		>
 			{childOfModal}
@@ -27,13 +26,12 @@ function modalContainer(props) {
 
 const mapStateToProps = state => {
 	const {
-		isOpen, hasTitle, textOfTitle, childOfModal
+		isOpen, title, childOfModal
 	} = state.modalReducer;
 
 	return {
 		isOpen: isOpen,
-		hasTitle: hasTitle,
-		textOfTitle: textOfTitle,
+		title: title,
 		childOfModal: childOfModal
 	}
 }

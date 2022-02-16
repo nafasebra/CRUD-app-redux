@@ -2,8 +2,7 @@ import { createElement } from "react"
 
 const initialState = {
     isOpen: false,
-    hasTitle: true,
-    textOfTitle: '',
+    title: '',
     childOfModal: createElement(null)
 }
 
@@ -12,8 +11,7 @@ function modalReducer (state = initialState, action) {
         case "SET_OPEN_MODAL" :
             return {
                 isOpen: true,
-                hasTitle: action.title.hasTitle,
-                textOfTitle: action.title.textOfTitle,
+                title: action.title,
                 childOfModal: action.child
             }
         case "SET_CLOSE_MODAL":

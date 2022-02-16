@@ -28,7 +28,7 @@ const Navbar = () => {
                 <button 
                     className={theme.btn_icon}
                     onClick={
-                        () => dispatch(OpenModal({hasTitle: true, textOfTitle: 'hello'}, <AddPost />))
+                        () => dispatch(OpenModal('Adding a post', <AddPost />))
                     }
                 >
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" /></svg>
