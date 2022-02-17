@@ -12,12 +12,12 @@
 }
 @media (min-width: 576px) {
     .container{
-        max-width: 540px;
+        max-width: 550px;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 786px) {
     .container{
-        max-width: 720px;
+        max-width: 740px;
     }
 }
 @media (min-width: 992px) {
@@ -32,6 +32,6 @@
 }
 @media (min-width: 1400px) {
     .container{
-        max-width: 1320px;
+        max-width: 1350px;
     }
 }
