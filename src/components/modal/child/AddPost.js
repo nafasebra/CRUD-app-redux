@@ -1,6 +1,6 @@
 import React from 'react';
 
-import theme from './../Theme.module.css';
+import theme from './../../Theme.module.css';
 
 
 const Addpost = () => {

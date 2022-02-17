@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import style from './Navbar.module.css';
 import theme from './Theme.module.css';
 
-import AddPost from './modal/AddPost'
+import AddPost from './modal/child/AddPost'
 
 
 const Navbar = () => {
