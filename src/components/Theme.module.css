@@ -11,7 +11,6 @@
     background-color: transparent;
     border: none;
     margin: 0.6rem ;
-    color: #ffffff;
     cursor: pointer;
 }
 .btn_icon::before{

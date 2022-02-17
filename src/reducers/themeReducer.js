@@ -1,4 +1,4 @@
-function themeReducer(state = 'light', action) {
+function themeReducer(state = 'dark', action) {
     switch(action.type) {
         case "SET_DARK_THEME":
             return 'dark'
