@@ -36,7 +36,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
     padding: 1.5rem 0.5rem;
 }
 .modal_header button,

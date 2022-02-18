@@ -7,7 +7,8 @@
   --text-light: #212121;
 }
 
-.app-light .navbar{
+.app-light .navbar,
+.app-light .footer{
   background-color: var(--background-light);
   color: var(--text-light);
 }
@@ -16,6 +17,10 @@
 }
 .app-light .app_container{
   background-color: var(--background-light-body);
+}
+.app-light .modal{
+  background-color: var(--background-light);
+  color: var(--text-light);
 }
 
 .app-dark .navbar{
