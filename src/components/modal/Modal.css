@@ -13,8 +13,9 @@
 .modal{
     padding: 0 0.75rem 1rem;
     width: 45vw;
-    height: calc(70vh - 50px);
+    height: calc(80vh - 50px);
     background-color: #2A2D3E;
+    color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 3px 6px #2a2d3e5d;
     overflow-y: hidden;
@@ -45,7 +46,7 @@
 
 .modal_body{
     padding: 1rem 0.75rem;
-    height: calc(70vh - 140px);
+    height: calc(80vh - 145px);
     overflow-y: auto;
 }
 .modal_body::-webkit-scrollbar{
@@ -55,4 +56,4 @@
     background-color: #4d5372;
     box-shadow: 0 3px 6px #4d537277;
     border-radius: 10px;
-}
+  }

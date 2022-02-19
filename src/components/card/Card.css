@@ -57,11 +57,14 @@
 
 .card_body{
     padding: 1rem 1rem;
-    color: #ffffff;
 }
 
 .card_title{
     margin-top: 0;
+    color: #ffffff;
+}
+.card_desc{
+    color: #f0f0f0aa;
 }
 
 .card_topics{
@@ -73,7 +76,8 @@
     display: inline-block;
     background-color: #35394d;
     border-radius: 5px;
-    padding: 0.3rem 0.7rem;
+    color: #ffffff;
+    padding: 0.3rem 0.7rem 0.5rem;
     margin: 0.3rem;
 }
 .card_topic:nth-child(1){

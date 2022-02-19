@@ -1,10 +1,11 @@
 .footer{
     background-color: #2A2D3E;
+    color: #ffffff;
     padding: 1.2rem 1.5rem;
-    box-shadow: 0 -3px 6px #2a2d3e5d;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 2rem;
+    box-shadow: 0 -3px 6px #2a2d3e5d;
 }
 
 .copyright_text,

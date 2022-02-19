@@ -5,12 +5,23 @@
   --background-light: #ffffff;
   --background-light-body: #f5f5f5;
   --text-light: #212121;
+  --text-secondary: #707070;
+  --light-secondary-color: #aaaaaa;
+  --scrollbar-dark: #4d5372;
+  --scrollbar-light: #aaaaaa;
 }
 
-.app-light .navbar,
-.app-light .footer{
+/* SET transition for all mode */
+.app-light > *,
+.app-dark > *{
+  transition: all 300ms;
+}
+
+/* declare styles of light theme */
+.app-light .navbar{
   background-color: var(--background-light);
   color: var(--text-light);
+  box-shadow: 0 3px 6px #f3f3f3;
 }
 .app-light svg{
   color: var(--text-light);
@@ -22,11 +33,46 @@
   background-color: var(--background-light);
   color: var(--text-light);
 }
-
-.app-dark .navbar{
-  background-color: var(--background-dark);
-  color: var(--text-dark);
+.app-light .card{
+  background-color: var(--background-light);
+  color: var(--text-light);
+  box-shadow: 0 3px 8px #f3f3f3;
 }
+.app-light .modal_body::-webkit-scrollbar-thumb{
+  background-color: #cdcdcd;
+  box-shadow: 0 3px 6px #f0f0f0;
+  border-radius: 10px;
+}
+.app-light .head_text,
+.app-light .card_title{
+  color: var(--text-light);
+}
+.app-light .card_topic{
+  color: var(--text-light);
+  background-color: #ececec;
+}
+.app-light .form_input{
+  border: 1px solid var(--light-secondary-color);
+  color: var(--text-light);
+}
+.app-light .form_input::placeholder{
+  color: var(--light-secondary-color);
+}
+.app-light .imageupload_section{
+  border: 2px dashed var(--light-secondary-color);
+  color: var(--text-secondary);
+}
+.app-light .footer{
+  background-color: var(--background-light);
+  box-shadow: 0 -3px 6px #f3f3f3;
+}
+.app-light .card_desc,
+.app-light .footer .copyright_text,
+.app-light .footer .copyright_text a{
+  color: var(--text-secondary);
+}
+
+/* --- declare styles of dark theme -- */
 .app-dark svg{
   color: var(--text-dark);
 }
