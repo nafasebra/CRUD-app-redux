@@ -91,6 +91,9 @@
     .card_item{
         width: 94%;
     }
+    .head_text{
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 795px) {

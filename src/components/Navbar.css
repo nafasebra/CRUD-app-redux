@@ -20,3 +20,8 @@
     align-items: center;
 }
 
+@media (max-width: 576px){
+    .navbar_logo{
+        font-size: 1.2rem;
+    }
+}

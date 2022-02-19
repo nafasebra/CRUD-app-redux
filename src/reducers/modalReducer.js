@@ -1,9 +1,7 @@
-import { createElement } from "react"
-
 const initialState = {
     isOpen: false,
     title: '',
-    childOfModal: createElement(null)
+    childOfModal: null
 }
 
 function modalReducer (state = initialState, action) {
@@ -19,7 +17,8 @@ function modalReducer (state = initialState, action) {
                 ...state,
                 isOpen: false
             }
-        default : return state
+        default: 
+            return state
     }
 }
 
