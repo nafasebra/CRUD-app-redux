@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
+// components
 import Navbar from './components/Navbar';
 import CardSection from './components/card/CardSection';
-import ModalContainer from './container/ModalContainer';
 import Footer from './components/Footer';
 
+// containers
+import ModalContainer from './container/ModalContainer';
+import PopupContainer from './container/PopupContainer';
+
+// action creators
 import { setDarkTheme, setLightTheme } from './actions/themeAction';
 
+// styles
 import './App.css';
-import { useEffect } from 'react';
 
 
 function App() {
