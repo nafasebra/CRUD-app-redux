@@ -1,24 +1,22 @@
-const CREATE_POST = "CREATE_POST";
-const UPDATE_POST = "UPDATE_POST";
-const DELETE_POST = "DELETE_POST";
+import * as type from './../constants/constants';
 
 export function CreatePost(infos) {
     return {
-        type: CREATE_POST,
-        payload: infos
+        type: type.CREATE_POST,
+        infos
     }
 }
 
 export function UpdatePost(id) {
     return{
-        type: UPDATE_POST,
+        type: type.UPDATE_POST,
         id
     }
 }
 
 export function DeletePost(id) {
     return{
-        type: DELETE_POST,
+        type: type.DELETE_POST,
         id
     }
 }

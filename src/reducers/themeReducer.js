@@ -1,8 +1,10 @@
+import * as type from '../constants/constants'
+
 function themeReducer(state = 'dark', action) {
     switch(action.type) {
-        case "SET_DARK_THEME":
+        case type.SET_DARK_THEME:
             return 'dark'
-        case "SET_LIGHT_THEME":
+        case type.SET_LIGHT_THEME:
             return 'light'
         default: return state;
     }

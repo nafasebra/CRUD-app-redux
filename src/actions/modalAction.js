@@ -1,10 +1,8 @@
-const SET_OPEN_MODAL = "SET_OPEN_MODAL";
-const SET_CLOSE_MODAL = "SET_CLOSE_MODAL";
-
+import * as type from './../constants/constants';
 
 export function OpenModal(title, child) {
     return{
-        type: SET_OPEN_MODAL,
+        type: type.SET_OPEN_MODAL,
         title,
         child
     }
@@ -12,6 +10,6 @@ export function OpenModal(title, child) {
 
 export function CloseModal() {
     return{
-        type: SET_CLOSE_MODAL
+        type: type.SET_CLOSE_MODAL
     }
 }

@@ -4,19 +4,19 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 200;
     display: flex;
     justify-content: center;
     align-items: center;
     visibility: hidden;
     opacity: 0;
+    z-index: -1;
     background-color: #21212150;
-    transition: opacity 300ms,
-                visibility 300ms;
+    transition: all 300ms;
 }
 .modal_container.open{
     visibility: visible;
     opacity: 1;
+    z-index: 200;
 }
 .modal{
     position: fixed;
@@ -36,7 +36,6 @@
     visibility: visible;
     transform: translateY(0);
     opacity: 1;
-    transition: all 300ms;
 }
 
 .modal_header{

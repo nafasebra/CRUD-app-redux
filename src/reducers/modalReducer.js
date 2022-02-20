@@ -1,3 +1,5 @@
+import * as type from './../constants/constants'
+
 const initialState = {
     isOpen: false,
     title: '',
@@ -6,13 +8,13 @@ const initialState = {
 
 function modalReducer (state = initialState, action) {
     switch(action.type){
-        case "SET_OPEN_MODAL" :
+        case type.SET_OPEN_MODAL :
             return {
                 isOpen: true,
                 title: action.title,
                 childOfModal: action.child
             }
-        case "SET_CLOSE_MODAL":
+        case type.SET_CLOSE_MODAL:
             return {
                 ...state,
                 isOpen: false

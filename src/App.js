@@ -19,9 +19,9 @@ function App() {
 
 	const setTheme = (theme = 'dark') => {
 		if(theme === 'dark')
-			return dispatch(setDarkTheme())
+			dispatch(setDarkTheme())
 		else 
-			return dispatch(setLightTheme())
+			dispatch(setLightTheme())
 	}
 
 	useEffect(() => {
@@ -35,9 +35,8 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		if(localStorage.getItem('theme')){
+		if(localStorage.getItem('theme'))
 			localStorage.setItem('theme', theme);
-		}	
 	}, [theme])
 	
 

@@ -1,14 +1,13 @@
-const SET_DARK_THEME = "SET_DARK_THEME";
-const SET_LIGHT_THEME = "SET_LIGHT_THEME";
+import * as type from './../constants/constants';
 
 export function setDarkTheme () {
     return{
-        type: SET_DARK_THEME
+        type: type.SET_DARK_THEME
     }
 }
 
 export function setLightTheme () {
     return{
-        type: SET_LIGHT_THEME
+        type: type.SET_LIGHT_THEME
     }
 }
