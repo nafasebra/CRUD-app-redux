@@ -49,6 +49,8 @@ function App() {
 		<div className={theme === 'dark' ? 'app-dark' : 'app-light'}>
 			<div className="app_container">
 				<ModalContainer />
+				<PopupContainer />
+
 				<Navbar />
 				<CardContainer />
 				<Footer />
