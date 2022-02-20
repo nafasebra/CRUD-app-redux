@@ -1,14 +1,12 @@
-import React from 'react';
+import Card from '../components/card/Card';
 
-import Card from './Card';
+import posts from '../data/posts';
 
-import posts from '../../data/posts';
-
-import layout from './../Layout.module.css'
-import './Card.css'
+import layout from '../components/Layout.module.css';
+import '../components/card/Card.css';
 
 
-const CardSection = () => {
+const CardContainer = () => {
     return (
         <div className={layout.container}>
             <h3 className="head_text">Added Posts...</h3>
@@ -21,4 +19,4 @@ const CardSection = () => {
     );
 }
 
-export default CardSection;
+export default CardContainer;

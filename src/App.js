@@ -3,17 +3,17 @@ import { useSelector, useDispatch } from 'react-redux';
 
 // components
 import Navbar from './components/Navbar';
-import CardSection from './components/card/CardSection';
 import Footer from './components/Footer';
 
 // containers
 import ModalContainer from './container/ModalContainer';
 import PopupContainer from './container/PopupContainer';
+import CardContainer from './container/CardContainer';
 
 // action creators
 import { setDarkTheme, setLightTheme } from './actions/themeAction';
 
-// styles
+// style file
 import './App.css';
 
 
@@ -50,7 +50,7 @@ function App() {
 			<div className="app_container">
 				<ModalContainer />
 				<Navbar />
-				<CardSection />
+				<CardContainer />
 				<Footer />
 			</div>
 		</div>
