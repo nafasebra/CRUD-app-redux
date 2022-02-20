@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './../Theme.css';
+import '../Theme.css';
 import './Card.css';
 
 

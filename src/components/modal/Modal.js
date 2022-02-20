@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import './../Theme.css';
+import '../Theme.css';
 import './Modal.css';
 
 

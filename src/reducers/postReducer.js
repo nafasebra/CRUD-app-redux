@@ -5,13 +5,31 @@ function postReducer (state = [], action) {
         case type.CREATE_POST:
             return [
                 ...state,
-                action.payload
+                action.infos
             ]
         case type.UPDATE_POST:
-            return state;
+            return UpdatePost(action.id, action.infos, state);
         case type.DELETE_POST:
-            return state;
+            return deletePost(action.id, state);
         default: return state;
+    }
+}
+
+function UpdatePost (id, infos, state) {
+    if(infos === null){
+        return state
+    } else {
+        return [
+            ...state,
+            {[id]: infos}
+        ]
+    }
+}
+
+function deletePost (id, state) {
+    const filterPostById = state.filter(post => post.id !== id);
+    return{
+        ...filterPostById
     }
 }
 

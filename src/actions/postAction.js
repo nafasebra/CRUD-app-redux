@@ -1,4 +1,4 @@
-import * as type from './../constants/constants';
+import * as type from '../constants/constants';
 
 export function CreatePost(infos) {
     return {
@@ -7,10 +7,11 @@ export function CreatePost(infos) {
     }
 }
 
-export function UpdatePost(id) {
+export function UpdatePost(id, infos) {
     return{
         type: type.UPDATE_POST,
-        id
+        id,
+        infos
     }
 }
 

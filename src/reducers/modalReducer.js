@@ -1,4 +1,4 @@
-import * as type from './../constants/constants'
+import * as type from '../constants/constants'
 
 const initialState = {
     isOpen: false,
