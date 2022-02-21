@@ -1,6 +1,9 @@
 import * as type from '../constants/constants'
+import posts from '../data/posts';
 
-function postReducer (state = [], action) {
+const initialState = posts;
+
+function postReducer (state = initialState, action) {
     switch(action.type) {
         case type.CREATE_POST:
             return [
