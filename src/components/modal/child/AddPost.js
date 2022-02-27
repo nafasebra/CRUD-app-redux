@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-
+import { v4 as uuidu4 } from 'uuid';
 
 import '../../Theme.css';
 
@@ -38,7 +38,7 @@ const Addpost = () => {
         setEnteryPostInfos(prev => {
             return {
                 ...prev,
-                id: 6
+                id: uuidu4()
             }
         })
         dispatch(CreatePost(entryPostInfos));
