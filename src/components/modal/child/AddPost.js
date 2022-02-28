@@ -1,12 +1,11 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { v4 as uuidu4 } from 'uuid';
-
-import '../../Theme.css';
 
 import { CreatePost } from '../../../actions/postAction'
 import { CloseModal } from '../../../actions/modalAction'
 import { useDispatch } from 'react-redux';
+
+import '../../Theme.css';
 
 
 const Addpost = () => {
@@ -15,7 +14,7 @@ const Addpost = () => {
 
     const [ entryPostInfos, setEnteryPostInfos ] = useState({
         id: 0,
-        imageURL: 'gdfgdfg',
+        imageURL: '',
         title: '',
         topics: [],
         description: ''
@@ -62,11 +61,40 @@ const Addpost = () => {
                 </div>
             </label>
 
-            <input type="text" placeholder='post title' className="form_input" />
+            <input 
+                type="text" 
+                placeholder='post title' 
+                value={entryPostInfos.title}
+                onChange={(e) => {
+                    setEnteryPostInfos(prev => {
+                        return {
+                            ...prev,
+                            title: e.target.value
+                        }
+                    })
+                }}
+                className="form_input" 
+            />
             
-            <input type="text" placeholder='post topics' className="form_input" />
+            <input 
+                type="text" 
+                placeholder='post topics' 
+                className="form_input" 
+            />
             
-            <textarea placeholder='post description' className="form_input" rows="10"></textarea>
+            <textarea 
+                placeholder='post description' 
+                className="form_input" 
+                rows="10"
+                onChange={(e) => {
+                    setEnteryPostInfos(prev => {
+                        return {
+                            ...prev,
+                            description: e.target.value
+                        }
+                    })
+                }}
+            >{entryPostInfos.description}</textarea>
             
             <button 
                 className="btn_blue"
