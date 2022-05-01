@@ -18,6 +18,9 @@ const Addpost = () => {
 		topics: [],
 		description: ''
 	});
+	const [valueTheTopic, setValueTheTopic] = useState('');
+	const [listOfTopics, setListOfTopics] = useState(['sdf']);
+
 
 	const submitForm = () => {
 		setEnteryPostInfos(prev => {
@@ -63,11 +66,35 @@ const Addpost = () => {
 				className="form_input"
 			/>
 
-			<input
-				type="text"
-				placeholder='post topics'
-				className="form_input"
-			/>
+			<div style={{padding: "1rem 0"}}> 
+				<p>Type a tag and press TAB</p>
+				<input 
+					type="text" 
+					className="form_input" 
+					value={valueTheTopic}
+					onChange={(e) => {
+						setValueTheTopic(e.target.value)
+					}}
+					onKeyDown={(e) => {
+						if(e.key === "Tab") {
+							setListOfTopics([
+								...listOfTopics,
+								valueTheTopic
+							]);
+							setValueTheTopic('');
+							e.preventDefault();
+						}
+					}}
+				/>
+				<div className='card_topics'>
+					{
+						listOfTopics.length &&
+						listOfTopics.map((item, index) => 
+							<div key={index} className='card_topic'>{item}</div>
+						)
+					}
+				</div>
+			</div>
 
 			<textarea
 				placeholder='post description'
