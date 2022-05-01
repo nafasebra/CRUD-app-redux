@@ -4,7 +4,7 @@ import '../Theme.css';
 import './Card.css';
 
 
-const Card = (props) => {
+const Card = ( props ) => {
 
     const { title, imgSrc, desc, topics } = props;
 
