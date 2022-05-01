@@ -19,7 +19,21 @@ const Addpost = () => {
 		description: ''
 	});
 	const [valueTheTopic, setValueTheTopic] = useState('');
-	const [listOfTopics, setListOfTopics] = useState(['sdf']);
+
+
+	const AddTopicTabHandler = (e) => {
+		if(e.key === "Tab") {
+			setEnteryPostInfos({
+				...entryPostInfos,
+				topics: [
+					...entryPostInfos.topics,
+					valueTheTopic
+				]
+			});
+			setValueTheTopic('');
+			e.preventDefault();
+		}
+	}
 
 
 	const submitForm = () => {
@@ -30,6 +44,7 @@ const Addpost = () => {
 			}
 		})
 		dispatch(CreatePost(entryPostInfos));
+		console.log(entryPostInfos);
 		dispatch(CloseModal());
 	}
 
@@ -72,26 +87,16 @@ const Addpost = () => {
 					type="text" 
 					className="form_input" 
 					value={valueTheTopic}
-					onChange={(e) => {
-						setValueTheTopic(e.target.value)
-					}}
-					onKeyDown={(e) => {
-						if(e.key === "Tab") {
-							setListOfTopics([
-								...listOfTopics,
-								valueTheTopic
-							]);
-							setValueTheTopic('');
-							e.preventDefault();
-						}
-					}}
+					onChange={(e) => setValueTheTopic(e.target.value)}
+					onKeyDown={(e) => AddTopicTabHandler(e)}
 				/>
 				<div className='card_topics'>
 					{
-						listOfTopics.length &&
-						listOfTopics.map((item, index) => 
+						entryPostInfos.topics.length ?
+						entryPostInfos.topics.map((item, index) => 
 							<div key={index} className='card_topic'>{item}</div>
 						)
+						: null
 					}
 				</div>
 			</div>
