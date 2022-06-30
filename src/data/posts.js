@@ -9,7 +9,7 @@ const posts = [
         description: "this is a post description"
     },{
         id: uuidu4(),
-        imageSrc: "https://i.ytimg.com/vi/CTCVaslgLCY/hqdefault.jpg",
+        imageSrc: "https://wwfeu.awsassets.panda.org/img/people_and_nature_701917.jpg",
         title: "post 2",
         topics: ["post", "sec post"],
         description: "this is a post description"
@@ -21,7 +21,7 @@ const posts = [
         description: "this is a post description"
     },{
         id: uuidu4(),
-        imageSrc: "https://i.ytimg.com/vi/CTCVaslgLCY/hqdefault.jpg",
+        imageSrc: "https://wwfeu.awsassets.panda.org/img/people_and_nature_701917.jpg",
         title: "post 4",
         topics: ["post", "fourth post"],
         description: "this is a post description"
@@ -33,7 +33,7 @@ const posts = [
         description: "this is a post description"
     },{
         id: uuidu4(),
-        imageSrc: "https://i.ytimg.com/vi/CTCVaslgLCY/hqdefault.jpg",
+        imageSrc: "https://wwfeu.awsassets.panda.org/img/people_and_nature_701917.jpg",
         title: "post 6",
         topics: ["post", "6th post"],
         description: "this is a post description"

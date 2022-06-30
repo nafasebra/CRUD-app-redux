@@ -13,7 +13,7 @@ function postReducer (state = initialState, action) {
         case type.UPDATE_POST:
             return UpdatePost(action.id, action.infos, state);
         case type.DELETE_POST:
-            return deletePost(action.id, state);
+            return DeletePost(action.id, state);
         default: return state;
     }
 }
@@ -29,11 +29,11 @@ function UpdatePost (id, infos, state) {
     }
 }
 
-function deletePost (id, state) {
+function DeletePost (id, state) {
     const filterPostById = state.filter(post => post.id !== id);
-    return{
+    return[
         ...filterPostById
-    }
+    ]
 }
 
 export default postReducer;
