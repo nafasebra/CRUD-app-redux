@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { DeletePost } from "../../actions/postAction";
+import { OpenModal } from "../../actions/modalAction";
+import DeletePost from "../modal/child/DeletePost";
 
 import "../Theme.css";
 import "./Card.css";
@@ -8,10 +9,6 @@ import "./Card.css";
 const Card = (props) => {
   const dispatch = useDispatch();
   const { id, title, imgSrc, desc, topics } = props;
-
-  const DeletingPost = () => {
-    dispatch(DeletePost(id));
-  };
 
   return (
     <div className="card_item">
@@ -34,7 +31,10 @@ const Card = (props) => {
                 />
               </svg>
             </button>
-            <button className="btn_icon" onClick={DeletingPost}>
+            <button
+              className="btn_icon"
+              onClick={dispatch(OpenModal("Deleting post", <DeletePost />))}
+            >
               <svg
                 className="w-6 h-6"
                 fill="none"

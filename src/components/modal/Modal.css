@@ -63,6 +63,19 @@
     border-radius: 10px;
 }
 
+.modal_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.modal_icon svg {
+    width: 100px;
+}
+
+
 @media (max-width: 576px) {
     .modal_container{
         background-color: transparent;
