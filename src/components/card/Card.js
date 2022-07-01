@@ -33,7 +33,7 @@ const Card = (props) => {
             </button>
             <button
               className="btn_icon"
-              onClick={dispatch(OpenModal("Deleting post", <DeletePost />))}
+              onClick={() => dispatch(OpenModal("Deleting post", <DeletePost />))}
             >
               <svg
                 className="w-6 h-6"

@@ -79,25 +79,83 @@
     position: relative;
     background-color: #2979FF;
     width: 100%;
-    border: none;
+    border: 1px solid #2979FF !important;
     padding: 1rem;
     border-radius: 10px;
     color: #ffffff;
+    font-size: 1.2rem;
+}
+.btn_red {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    overflow: hidden;
+    position: relative;
+    background-color: #e74c3c;
+    width: 100%;
+    border: 1px solid #e74c3c;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.btn_blue__outline{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #2979FF;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #2979FF;
+    transition: all 300ms;
+    font-size: 1.2rem;
+}
+.btn_red__outline {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #e74c3c;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #e74c3c;
+    transition: all 300ms;
+    font-size: 1.2rem;
 }
 
-.btn_blue::after{
+.btn_blue::after,
+.btn_red::after{
     content: ' ';
     position: absolute;
-    bottom: 0;
-    right: 0;
     left: 0;
+    bottom: 0;
     width: 0;
     height: 0;
-    border-radius: 50;
-    transition: width 300ms, height 300ms;
+    border-top-right-radius: 50%;
+    transition: all 300ms;
     background-color: #ffffff44;
 }
-.btn_blue:hover::after{
-    width: 700px;
-    height: 700px;
+
+.btn_blue:hover::after,
+.btn_red:hover::after{
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+}
+.btn_blue__outline:hover {
+    background-color: #2979FF;
+    color: #ffffff;
+}
+.btn_red__outline:hover {
+    background-color: #e74c3c;
+    color: #ffffff;
 }
