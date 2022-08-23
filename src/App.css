@@ -70,10 +70,18 @@
   color: var(--text-secondary);
 }
 
+.app-light a {
+  color: var(--text-light);
+}
+
 /* --- declare styles of dark theme -- */
 .app-dark svg{
   color: var(--text-dark);
 }
 .app-dark .app_container{
   background-color: var(--background-dark-body);
+}
+
+.app-dark a {
+  color: var(--text-dark);
 }

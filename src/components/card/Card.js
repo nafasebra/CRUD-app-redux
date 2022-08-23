@@ -2,9 +2,11 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { OpenModal } from "../../actions/modalAction";
 import DeletePost from "../modal/child/DeletePost";
+import {Link} from "react-router-dom"
 
 import "../Theme.css";
 import "./Card.css";
+
 
 const Card = (props) => {
   const dispatch = useDispatch();
@@ -59,7 +61,9 @@ const Card = (props) => {
           </div>
         </div>
         <div className="card_body">
-          <h3 className="card_title">{title}</h3>
+          <h3 className="card_title">
+            <Link to="post">{title}</Link>
+          </h3>
           <p className="card_desc">{desc}</p>
           <div className="card_topics">
             {topics.map((item, index) => (

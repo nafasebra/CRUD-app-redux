@@ -8,6 +8,10 @@ html, body{
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 textarea{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -22,7 +26,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #212332; */
 }
 
 button:focus,
@@ -43,7 +46,6 @@ textarea:focus{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
 }
 
 .py-3 {
@@ -52,6 +54,10 @@ textarea:focus{
 }
 .m_0 {
   margin: 0;
+}
+
+.link {
+  color: #2979FF;
 }
 
 
