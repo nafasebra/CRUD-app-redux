@@ -1,12 +1,19 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { CloseModal } from '../../../actions/modalAction';
-
+import { DeletePost } from '../../../actions/postAction';
 
 import './../Modal.css';
 
 
-function Delete() {
+function Delete({postId}) {
+	const dispatch = useDispatch();
+
+	const DeleteByPostId = () => {
+		dispatch(DeletePost(postId));
+		dispatch(CloseModal());
+	}
+
 	return (
 		<div className="modal_center">
 			<div className="modal_icon">
@@ -15,7 +22,7 @@ function Delete() {
 			<h3 className="modal_message">Are you want to delete the Post?</h3>
 			<div className="modal_two__buttons">
 				<button className="btn_red__outline">cancel</button>
-				<button className="btn_red">Delete</button>
+				<button className="btn_red" onClick={DeleteByPostId}>Delete</button>
 			</div>
 		</div>
 	)
