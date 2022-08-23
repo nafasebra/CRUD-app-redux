@@ -12,14 +12,11 @@ import OpenThePost from './pages/OpenThePost';
 
 // style file
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
-
 	const theme = useSelector(state => state.themeReducer);
 	const dispatch = useDispatch();
-
 	const setTheme = (theme = 'dark') => {
 		if(theme === 'dark') dispatch(setDarkTheme())
 		else dispatch(setLightTheme())
@@ -46,7 +43,7 @@ function App() {
 			<div className="app_container">
 				<Routes>
 					<Route path='/' element={<MainPage />} />
-					<Route path='/post' element={<OpenThePost />} />
+					<Route path='/post:id' element={<OpenThePost />} />
 					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</div>

@@ -1,5 +1,4 @@
 import Card from "../components/card/Card";
-import layout from "../components/Layout.module.css";
 import "../components/card/Card.css";
 import { useSelector } from "react-redux";
 
@@ -7,7 +6,7 @@ const CardContainer = () => {
   const data = useSelector((state) => state.postReducer);
 
   return (
-    <div className={layout.container}>
+    <div className="container">
       <h3 className="head_text">Added Posts...</h3>
       <div className="card_section">
         {data.map((item) => (
