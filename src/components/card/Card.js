@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { OpenModal } from "../../actions/modalAction";
 import DeletePost from "../modal/child/DeletePost";
@@ -20,6 +19,7 @@ const Card = (props) => {
       <div className="card">
         <div className="card_header">
           <div className="card_icons">
+            {/* the edit button */}
             <button className="btn_icon">
               <svg
                 className="w-6 h-6"
@@ -36,6 +36,7 @@ const Card = (props) => {
                 />
               </svg>
             </button>
+            {/* the delete post button */}
             <button className="btn_icon" onClick={DeletingPost}>
               <svg
                 className="w-6 h-6"
