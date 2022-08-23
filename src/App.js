@@ -23,11 +23,9 @@ function App() {
 	const dispatch = useDispatch();
 
 	const setTheme = (theme = 'dark') => {
-		if(theme === 'dark')
-			dispatch(setDarkTheme())
-		else 
-			dispatch(setLightTheme())
-	}
+		if(theme === 'dark') dispatch(setDarkTheme())
+		else dispatch(setLightTheme())
+	};
 
 	useEffect(() => {
 		if(!localStorage.getItem('theme')){
@@ -42,7 +40,7 @@ function App() {
 	useEffect(() => {
 		if(localStorage.getItem('theme'))
 			localStorage.setItem('theme', theme);
-	}, [theme])
+	}, [theme]);
 	
 
 	return (
