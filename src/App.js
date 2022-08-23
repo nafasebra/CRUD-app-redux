@@ -1,11 +1,18 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Routes, Route } from 'react-router-dom';
 
 // action creators
 import { setDarkTheme, setLightTheme } from './actions/themeAction';
 
+// pages
+import Error404 from './pages/Error404';
+import MainPage from './pages/MainPage';
+import OpenThePost from './pages/OpenThePost';
+
 // style file
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
@@ -37,7 +44,11 @@ function App() {
 	return (
 		<div className={theme === 'dark' ? 'app-dark' : 'app-light'}>
 			<div className="app_container">
-				
+				<Routes>
+					<Route path='/' element={<MainPage />} />
+					<Route path='/post' element={<OpenThePost />} />
+					<Route path='*' element={<Error404 />} />
+				</Routes>
 			</div>
 		</div>
 	);
