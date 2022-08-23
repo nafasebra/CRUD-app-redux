@@ -21,7 +21,7 @@ function Delete({postId}) {
 			</div>
 			<h3 className="modal_message">Are you want to delete the Post?</h3>
 			<div className="modal_two__buttons">
-				<button className="btn_red__outline">cancel</button>
+				<button className="btn_red__outline" onClick={() => dispatch(CloseModal())}>cancel</button>
 				<button className="btn_red" onClick={DeleteByPostId}>Delete</button>
 			</div>
 		</div>
