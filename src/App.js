@@ -43,7 +43,7 @@ function App() {
 			<div className="app_container">
 				<Routes>
 					<Route path='/' element={<MainPage />} />
-					<Route path='/post:id' element={<OpenThePost />} />
+					<Route path='/post/:id' element={<OpenThePost />} />
 					<Route path='*' element={<Error404 />} />
 				</Routes>
 			</div>

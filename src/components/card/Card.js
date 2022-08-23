@@ -62,7 +62,7 @@ const Card = (props) => {
         </div>
         <div className="card_body">
           <h3 className="card_title">
-            <Link to="post">{title}</Link>
+            <Link to={`post/${id}`}>{title}</Link>
           </h3>
           <p className="card_desc">{desc}</p>
           <div className="card_topics">
