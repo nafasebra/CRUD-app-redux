@@ -70,6 +70,10 @@
   color: var(--text-secondary);
 }
 
+.app-light .blog_page {
+  color: var(--text-light);
+}
+
 .app-light a {
   color: var(--text-light);
 }
