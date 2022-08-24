@@ -1,84 +1,29 @@
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 import "../components/card/Card.css";
 
+
 function OpenThePost() {
+  const {id} = useParams();
+  const data = useSelector((state) => state.postReducer);
+  const [selectedData, setSelectedData] = useState([]);
+
+  useEffect(() => {
+    setSelectedData(data.filter(item => item.id === id));
+  }, []);
+
   return (
     <>
       <Navbar showPlusBtn={false} />
       <div className="blog_page">
-        <h1> Lorem ipsum dolor sit amet. </h1>
-        <img src="..." alt="the Lorem ipsum dolor sit amet" />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-          laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-          laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-          laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Assumenda laboriosam fugit doloremque sapiente excepturi nulla atque?
-          Voluptates, laudantium dignissimos praesentium, unde magni eum
-          accusantium aut blanditiis perspiciatis, quos iure ipsum deserunt.
-          Sunt doloribus, ab deleniti aut obcaecati praesentium temporibus
-          suscipit.
-        </p>
+        <h1> {selectedData[0]?.title} </h1>
+        <img src={selectedData[0]?.imageSrc} alt="the Lorem ipsum dolor sit amet" />
+        <p>{selectedData[0]?.description}</p>
 
         <div className="card_topic">nature</div>
         <div className="card_topic">photo</div>
