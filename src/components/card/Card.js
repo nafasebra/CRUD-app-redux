@@ -2,11 +2,11 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { OpenModal } from "../../actions/modalAction";
 import DeletePost from "../modal/child/DeletePost";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 import "../Theme.css";
 import "./Card.css";
-
+import EditPost from "../modal/child/EditPost";
 
 const Card = (props) => {
   const dispatch = useDispatch();
@@ -16,13 +16,17 @@ const Card = (props) => {
     dispatch(OpenModal("Deleting post", <DeletePost postId={id} />));
   };
 
+  const EditingPost = () => {
+    dispatch(OpenModal("Editing the post", <EditPost postId={id} />));
+  };
+
   return (
     <div className="card_item">
       <div className="card">
         <div className="card_header">
           <div className="card_icons">
             {/* the edit button */}
-            <button className="btn_icon">
+            <button className="btn_icon" onClick={EditingPost}>
               <svg
                 className="w-6 h-6"
                 fill="none"
