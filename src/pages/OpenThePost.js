@@ -6,7 +6,7 @@ import "../components/card/Card.css";
 function OpenThePost() {
   return (
     <>
-      <Navbar />
+      <Navbar showPlusBtn={false} />
       <div className="blog_page">
         <h1> Lorem ipsum dolor sit amet. </h1>
         <img src="..." alt="the Lorem ipsum dolor sit amet" />

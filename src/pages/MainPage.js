@@ -11,7 +11,7 @@ import CardContainer from '../container/CardContainer';
 function MainPage() {
   return (
     <>
-      <Navbar />
+      <Navbar showPlusBtn />
       <CardContainer />
       <Footer />
     </>
