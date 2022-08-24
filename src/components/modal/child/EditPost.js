@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { v4 as uuidu4 } from "uuid";
 import { UpdatePost } from "../../../actions/postAction";
 import { CloseModal } from "../../../actions/modalAction";
 import { useDispatch, useSelector } from "react-redux";
@@ -22,7 +21,7 @@ const EditPost = ({postId}) => {
 
   useEffect(() => {
       let [infos] = allData.filter(item => item.id !== postId);
-      console.log(infos);
+      setEnteryPostInfos(infos);
   }, []);
 
   const AddTopicTabHandler = (e) => {
@@ -37,12 +36,6 @@ const EditPost = ({postId}) => {
   };
 
   const submitForm = () => {
-    setEnteryPostInfos((prev) => {
-      return {
-        ...prev,
-        id: uuidu4(),
-      };
-    });
     dispatch(UpdatePost(postId, entryPostInfos));
     setEnteryPostInfos({
       id: 0,
@@ -59,7 +52,7 @@ const EditPost = ({postId}) => {
       <input
         type="text"
         placeholder="Image URL"
-        value={entryPostInfos.imageURL}
+        value={entryPostInfos.imageSrc}
         onChange={(e) => {
           setEnteryPostInfos((prev) => {
             return {
@@ -109,6 +102,7 @@ const EditPost = ({postId}) => {
       <textarea
         placeholder="post description"
         className="form_input"
+        value={entryPostInfos.description}
         rows="10"
         onChange={(e) => {
           setEnteryPostInfos((prev) => {
