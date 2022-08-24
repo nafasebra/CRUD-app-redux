@@ -60,6 +60,26 @@ textarea:focus{
   color: #2979FF;
 }
 
+.blog_page {
+  max-width: 756px;
+  color: #ffffff;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: 0 auto;
+}
+.blog_page h1 {
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+.blog_page p {
+  opacity: 0.9;
+  line-height: 1.5rem;
+}
+.blog_page img {
+  width: 100%;
+  margin: 1rem 0;
+}
+
 
 @media (min-width: 340px) {
   .container{
@@ -89,5 +109,11 @@ textarea:focus{
 @media (min-width: 1400px) {
   .container{
       max-width: 1350px;
+  }
+}
+
+@media (max-width: 756px) {
+  .blog_page {
+    max-width: 90%;
   }
 }
