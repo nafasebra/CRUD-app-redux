@@ -20,9 +20,10 @@ const EditPost = ({postId}) => {
   const [valueTheTopic, setValueTheTopic] = useState("");
 
   useEffect(() => {
-      let [infos] = allData.filter(item => item.id !== postId);
-      setEnteryPostInfos(infos);
-  }, []);
+      console.log(postId)
+      let infos = allData.filter(item => item.id !== postId);
+      setEnteryPostInfos(infos[0]);
+  }, [allData]);
 
   const AddTopicTabHandler = (e) => {
     if (e.key === "Tab") {
@@ -44,6 +45,7 @@ const EditPost = ({postId}) => {
       topics: [],
       description: "",
     });
+    console.log(allData);
     dispatch(CloseModal());
   };
 

@@ -70,7 +70,7 @@ const Card = (props) => {
           </h3>
           <p className="card_desc">{desc}</p>
           <div className="card_topics">
-            {topics.map((item, index) => (
+            {topics?.map((item, index) => (
               <div key={index} className="card_topic">
                 {item}
               </div>

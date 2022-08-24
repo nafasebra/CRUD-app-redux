@@ -9,10 +9,10 @@ const CardContainer = () => {
     <div className="container">
       <h3 className="head_text">Added Posts...</h3>
       <div className="card_section">
-        {data.map((item) => (
+        {data?.map((item, index) => (
           <Card
-            key={item.id}
-            id = {item.id}
+            key={index}
+            id={item.id}
             imgSrc={item.imageSrc}
             title={item.title}
             desc={item.description}
