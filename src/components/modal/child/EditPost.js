@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { UpdatePost } from "../../../actions/postAction";
 import { CloseModal } from "../../../actions/modalAction";
 import { useDispatch, useSelector } from "react-redux";
 
 import "../../Theme.css";
-import { useEffect } from "react";
 
 const EditPost = ({postId}) => {
   const dispatch = useDispatch();

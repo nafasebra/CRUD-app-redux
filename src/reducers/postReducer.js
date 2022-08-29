@@ -22,11 +22,15 @@ function UpdatePost (id, infos, state) {
     if(infos === null){
         return state
     } else {
-        const index = state?.findIndex(item => item.id === id);
-        return [
-            ...state.slice(0, index),
+        // const index = state?.findIndex(item => item.id === id);
+        // return [
+        //     ...state.slice(0, index),
+        //     infos,
+        //     ...state.slice((index - 1) + 1),
+        // ]
+         return [
+            ...state.filter(item => item.id !== id),
             infos,
-            ...state.slice((index - 1) + 1),
         ]
     }
 }
