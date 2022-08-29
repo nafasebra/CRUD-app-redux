@@ -14,7 +14,9 @@ function OpenThePost() {
   const [selectedData, setSelectedData] = useState([]);
 
   useEffect(() => {
-    setSelectedData(data.filter(item => item.id === id));
+    setSelectedData(data.filter(item => item.id == id));
+    console.log(id);
+    console.log(data);
   }, []);
 
   return (
