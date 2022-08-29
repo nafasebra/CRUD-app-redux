@@ -68,7 +68,7 @@ const Card = (props) => {
           <h3 className="card_title">
             <Link to={`post/${id}`}>{title}</Link>
           </h3>
-          <p className="card_desc">{desc}</p>
+          <p className="card_desc">{desc.substr(0, 56) + "..."}</p>
           <div className="card_topics">
             {topics?.map((item, index) => (
               <div key={index} className="card_topic">
