@@ -20,10 +20,9 @@ const EditPost = ({postId}) => {
   const [valueTheTopic, setValueTheTopic] = useState("");
 
   useEffect(() => {
-      console.log(postId)
-      let infos = allData.filter(item => item.id !== postId);
+      let infos = allData.filter(item => item.id === postId);
       setEnteryPostInfos(infos[0]);
-  }, [allData]);
+  }, [postId]);
 
   const AddTopicTabHandler = (e) => {
     if (e.key === "Tab") {
