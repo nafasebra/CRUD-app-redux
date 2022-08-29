@@ -89,6 +89,7 @@
     }
     .card_item{
         width: 94%;
+        margin: 0 auto;
     }
     .head_text{
         font-size: 1.5rem;
