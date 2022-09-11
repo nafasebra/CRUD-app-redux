@@ -78,6 +78,7 @@ textarea:focus{
 .blog_page img {
   max-width: 100%;
   margin: 1rem 0;
+  border-radius: 20px;
 }
 
 
