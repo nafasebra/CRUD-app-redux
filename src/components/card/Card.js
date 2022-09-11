@@ -61,7 +61,33 @@ const Card = (props) => {
             </button>
           </div>
           <div className="card_img">
-            <img src={imgSrc} alt="first-of-post" />
+            {imgSrc !== "" ? (
+              <img src={imgSrc} alt="first-of-post" />
+            ) : (
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100%',
+                color: '#cdcdcd',
+                opacity: 0.3,
+              }}>
+                <svg
+                  style={{width: '50px'}}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+            )}
           </div>
         </div>
         <div className="card_body">
