@@ -61,7 +61,7 @@ textarea:focus{
 }
 
 .blog_page {
-  max-width: 756px;
+  max-width: 730px;
   color: #ffffff;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -76,7 +76,7 @@ textarea:focus{
   line-height: 1.5rem;
 }
 .blog_page img {
-  width: 100%;
+  max-width: 100%;
   margin: 1rem 0;
 }
 
@@ -112,7 +112,7 @@ textarea:focus{
   }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 755px) {
   .blog_page {
     max-width: 90%;
   }

@@ -17,6 +17,7 @@ import OpenThePost from "./pages/OpenThePost";
 // style file
 import "./App.css";
 
+
 function App() {
   const theme = useSelector((state) => state.themeReducer);
   const dispatch = useDispatch();
