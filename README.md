@@ -4,6 +4,8 @@
 
 [Watch demo](https://nafasebra.github.io/CRUD-app-redux/)
 
+
+
 ## Tools:
 - ReactJS
 - Redux
@@ -14,7 +16,7 @@
 
 ## What challenges have for me?
 - I use Redux for first time in React project
-- Handle state, reducer and actions
+- Handle state, reducer and actions in project
 
 ## How to use this?
 - first install npm and type this command to your terminal: `npm install`
