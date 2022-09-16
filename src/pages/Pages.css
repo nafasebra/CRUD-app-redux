@@ -1,0 +1,30 @@
+.blog_page {
+    max-width: 730px;
+    color: #ffffff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 0 auto;
+}
+
+.blog_page h1 {
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+
+.blog_page p {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    line-height: 2rem;
+}
+
+.blog_page img {
+    max-width: 100%;
+    margin: 1rem 0;
+    border-radius: 20px;
+}
+
+@media (max-width: 755px) {
+    .blog_page {
+        max-width: 90%;
+    }
+}

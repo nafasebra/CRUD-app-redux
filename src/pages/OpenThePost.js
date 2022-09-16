@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import "../components/card/Card.css";
+import "./Pages.css";
 
 function OpenThePost() {
   const { id } = useParams();
