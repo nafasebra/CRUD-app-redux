@@ -1,0 +1,37 @@
+.header_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1.1rem;
+    background-image: url('https://onestep4ward.com/wp-content/uploads/2015/01/Santiago-Street-Art-1536x1028.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header_page::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #21212170;
+    width: 100%;
+    height: 100%;
+}
+.header_text {
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 900;
+    max-width: 750px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+@media (max-width: 751px) {
+    .header_text{
+        max-width: 90%;
+    }
+}

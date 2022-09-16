@@ -9,6 +9,7 @@
 .card_section{
     display: flex;
     flex-wrap: wrap;
+    margin: 2rem 0;
 }
 
 .card_item{
