@@ -7,7 +7,6 @@ const CardContainer = () => {
 
   return (
     <div className="container">
-      <h3 className="head_text">Added Posts...</h3>
       <div className="card_section">
         {data?.map((item, index) => (
           <Card

@@ -7,7 +7,7 @@ import Modal from '../components/modal/Modal'
 import { CloseModal } from '../actions/modalAction';
 
 
-function modalContainer(props) {
+function ModalContainer(props) {
 
 	const {
 		isOpen, title, childOfModal, closeModal
@@ -42,4 +42,4 @@ const mapDispatchToProps = dispatch => {
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(modalContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(ModalContainer);
