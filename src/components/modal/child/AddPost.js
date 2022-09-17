@@ -31,22 +31,24 @@ const Addpost = () => {
   };
 
   const submitForm = () => {
-    setEnteryPostInfos((prev) => {
-      return {
-        ...prev,
-        id: uuidu4(),
-      };
-    });
-    dispatch(CreatePost(entryPostInfos));
-    setEnteryPostInfos({
-      id: 0,
-      imageSrc: "",
-      title: "",
-      topics: [],
-      description: "",
-    });
-    dispatch(CloseModal());
-    dispatch(setOpenPopup("Post is Added!"));
+    if(entryPostInfos.title !== "" && entryPostInfos.description !== "") {
+      setEnteryPostInfos((prev) => {
+        return {
+          ...prev,
+          id: uuidu4(),
+        };
+      });
+      dispatch(CreatePost(entryPostInfos));
+      setEnteryPostInfos({
+        id: 0,
+        imageSrc: "",
+        title: "",
+        topics: [],
+        description: "",
+      });
+      dispatch(CloseModal());
+      dispatch(setOpenPopup("Post is Added!"));
+    }
   };
 
   const RemoveFromTopics = (id) => {
