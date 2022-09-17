@@ -73,7 +73,8 @@
     flex-wrap: wrap;
 }
 .card_topic{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     background-color: #35394d;
     border-radius: 5px;
     color: #ffffff;
@@ -82,6 +83,28 @@
 }
 .card_topic:nth-child(1){
     margin-left: 0;
+}
+.card_topic__remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-left: 0.7rem;
+    margin-top: 0.2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.card_topic__remove:hover {
+    background-color: #dddddd50;
+}
+.card_topic__remove svg {
+    width: 15px;
+    height: 15px;
 }
 
 @media (max-width: 576px) {
