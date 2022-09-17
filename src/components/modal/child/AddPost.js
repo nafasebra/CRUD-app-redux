@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { v4 as uuidu4 } from "uuid";
 import { CreatePost } from "../../../actions/postAction";
 import { CloseModal } from "../../../actions/modalAction";
+import { setOpenPopup } from "../../../actions/PopupAction";
 import { useDispatch } from "react-redux";
 
 import "../../Theme.css";
@@ -45,6 +46,7 @@ const Addpost = () => {
       description: "",
     });
     dispatch(CloseModal());
+    dispatch(setOpenPopup("Post is Added!"));
   };
 
   const RemoveFromTopics = (id) => {
@@ -55,6 +57,7 @@ const Addpost = () => {
   };
 
   return (
+    <>
     <div className="text_light">
       <input
         type="text"
@@ -145,6 +148,7 @@ const Addpost = () => {
         <span>Create post</span>
       </button>
     </div>
+    </>
   );
 };
 

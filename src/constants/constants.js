@@ -7,3 +7,6 @@ export const SET_CLOSE_MODAL = "SET_CLOSE_MODAL";
  
 export const SET_DARK_THEME = "SET_DARK_THEME";
 export const SET_LIGHT_THEME = "SET_LIGHT_THEME";
+
+export const SET_SHOW_POPUP = "SET_SHOW_POPUP";
+export const SET_HIDE_POPUP = "SET_HIDE_POPUP";

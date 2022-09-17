@@ -18,6 +18,7 @@ const EditPost = ({postId}) => {
   });
   const [valueTheTopic, setValueTheTopic] = useState("");
 
+
   useEffect(() => {
       let infos = allData.filter(item => item.id === postId);
       setEnteryPostInfos(infos[0]);
@@ -43,11 +44,11 @@ const EditPost = ({postId}) => {
       topics: [],
       description: "",
     });
-    console.log(allData);
     dispatch(CloseModal());
   };
 
   return (
+    <>
     <div className="text_light">
       <input
         type="text"
@@ -120,6 +121,7 @@ const EditPost = ({postId}) => {
         <span>Edit the post</span>
       </button>
     </div>
+    </>
   );
 };
 

@@ -12,6 +12,9 @@
     border: none;
     margin: 0.6rem ;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn_icon::before{
     content: ' ';
