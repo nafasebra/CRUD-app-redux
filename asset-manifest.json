@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CRUD-app-redux/static/css/main.c7607175.css",
+    "main.js": "/CRUD-app-redux/static/js/main.7f62ef28.js",
+    "index.html": "/CRUD-app-redux/index.html",
+    "main.c7607175.css.map": "/CRUD-app-redux/static/css/main.c7607175.css.map",
+    "main.7f62ef28.js.map": "/CRUD-app-redux/static/js/main.7f62ef28.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7607175.css",
+    "static/js/main.7f62ef28.js"
+  ]
+}
