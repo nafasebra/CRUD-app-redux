@@ -128,7 +128,7 @@ const Addpost = () => {
         placeholder="post description"
         className="form_input"
         rows="10"
-        value=""
+        value={entryPostInfos.description}
         onChange={(e) => {
           setEnteryPostInfos((prev) => {
             return {

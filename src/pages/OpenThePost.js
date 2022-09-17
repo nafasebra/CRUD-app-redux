@@ -60,8 +60,13 @@ function OpenThePost() {
         )}
         <p>{selectedData[0]?.description}</p>
 
-        <div className="card_topic">nature</div>
-        <div className="card_topic">photo</div>
+        <div className="card_topics">
+          {
+            selectedData[0]?.topics.map((item, index) => (
+              <div className="card_topic" key={index}>{item}</div>
+            ))
+          }
+        </div>
       </div>
       <Footer />
     </>
