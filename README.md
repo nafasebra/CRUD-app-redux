@@ -1,8 +1,7 @@
 # CRUD Post application
 
-#### A simple application for Create, Read(Show and search), Update and Delete posts
-
-You can open selected post and see all description about this.
+#### A simple application for Create, Read, Update and Delete posts
+You can open selected post and see all info about this (like blog apps)
 
 
 [Watch demo](https://nafasebra.github.io/CRUD-app-redux/)
@@ -15,7 +14,9 @@ You can open selected post and see all description about this.
 
 
 ## Features:
-- CRUD
+- Create post
+- Delete selected post
+- Edit selected post
 - Using React-router v6 for open post and handled 404 error page
 - Theme switcher (with styled-components)
 - Popup
@@ -29,11 +30,18 @@ You can open selected post and see all description about this.
 - CSS :)
 
 ## What challenges have for me?
-- I use Redux for first time in React project
-- Handle state, reducer and actions in project
+- I use Redux for first time
+- Handle state, reducer and actions for CRUD method
 
-## How to use this?
-- first install npm and type this command to your terminal: `npm install`
-- for run, write this: `npm start`
+## How to run the project?
+- first install [node js and npm](https://nodejs.org/en/) on you pc 
+- type this command to your terminal: 
+```bash
+  npm install
+``` 
+- for run, write this: 
+```bash
+  npm start
+```
 
 
